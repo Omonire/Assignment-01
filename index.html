@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0b808;
+  }
+  
+  .login-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .login-container h2 {
+    text-align: center;
+  }
+  
+  .login-container form {
+    margin-top: 20px;
+  }
+  
+  .login-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .login-container input[type="text"], .login-container input[type="password"], .login-container input[type="email"] {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #070707;
+  }
+  
+  .login-container button[type="submit"] {
+    width: 100px;
+    height: 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .login-container button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .login-container p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login-container a {
+    text-decoration: none;
+    color: #8416b8;
+  }
+  
+  .login-container a:hover {
+    color: #00ff08;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(151, 78, 78);
+    background-color: rgba(9, 255, 50, 0.863);
+  }
+  
+  .modal-content {
+    background-color: #966b6b;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="C:\Users\HP\Desktop\crash html\New folder\edge.html" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit" style="margin: 20px auto; display: block;">Login</button>
+      <p>
+        <a href="#" id="forget-password-link">Forget Password?</a>
+      </p>
+      <p>Don't have an account? <a href="C:\Users\HP\Desktop\crash html\New folder\edge.html">Register here</a></p>
+    </form>
+    <div id="forget-password-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Forget Password</h2>
+        <form action="hjjj.phpd" method="post">
+          <label for="forget-password-email">Email:</label>
+          <input type="email" id="forget-password-email" name="email" required>
+          <button type="submit">Send Reset Link</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

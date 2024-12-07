@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freg 2024 Patch</title>
+<link href="C:\Users\HP\Desktop\Learning CSS and HTML\style.css" rel="stylesheet"><link rel="stylesheet" href="index.html">
+<style>
+body{
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        transition-duration: 32s;
+    font: 200; font-style: italic;
+    font-size: 3px;
+    background-color: yellow;
+}
+    .login-container {
+        width: 300px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: yellowgreen;
+        border: 1px solid rgb(128, 81, 91);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        transition: all step-start ease-in-out all;
+            transform-origin: 3px;
+            transition-duration: 3s;
+}
+.login-container h2 {
+    text-align: center;
+    transition: all step-start ease-in-out all;
+            transform-origin: 3px;
+            transition-duration: 3s;
+  }
+  
+  .login-container form {
+    margin-top: 20px;
+    transition: all step-start ease-in-out all;
+            transform-origin: 3px;
+            transition-duration: 3s;
+  }
+  
+  .login-container label {
+    display: block;
+    margin-bottom: 10px;
+    transition: all step-start ease-in-out all;
+            transform-origin: 3px;
+            transition-duration: 3s;
+  }
+  
+  .login-container input[type="text"], .login-container input[type="password"], .login-container input[type="email"] {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #070707;
+    transition:step-start;
+            transform-origin: 3px;
+            transition-duration: 3s;
+    transform: perspective(2+2);
+}
+        
+  
+  .login-container button[type="submit"] {
+    width: 100px;
+    height: 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    transition: all step-start ease-in-out all;
+            transform-origin: 3px;
+            transition-duration: 3s;
+  }
+  
+  .login-container button[type="submit"]:hover {
+    background-color: #3e8e41;
+    transition: all step-start ease-in-out all;
+            transform-origin: 3px;
+            transition-duration: 3s;
+  }
+  
+  .login-container p {
+    text-align: center;
+    margin-top: 20px;
+    transition: all step-start ease-in-out all;
+            transform-origin: 3px;
+            transition-duration: 3s;
+  }
+  
+  .login-container a {
+    text-decoration: none;
+    color: #8416b8;
+    transition: all step-start ease-in-out all;
+            transform-origin: 3px;
+            transition-duration: 3s;
+  }
+  
+  .login-container a:hover {
+    color: #00ff08;
+    transition: all step-start ease-in-out all;
+            transform-origin: 3px;
+            transition-duration: 3s;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(151, 78, 78);
+    background-color: rgba(9, 255, 50, 0.863);
+    transition: all step-start ease-in-out all;
+            transform-origin: 3px;
+            transition-duration: 3s;
+  }
+  
+  .modal-content {
+    background-color: #966b6b;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    transition: all step-start ease-in-out all;
+            transform-origin: 3px;
+            transition-duration: 3s;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all step-start ease-in-out all;
+            transform-origin: 3px;
+            transition-duration: 3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+</style>
+</head>
+<body>
+<h1> 
+
+<div class="login-container">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+    
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+    
+          <button type="submit" style="margin: 20px auto; display: block;">Login</button>
+          <p>
+            <a href="#" id="forget-password-link">Forget Password?</a>
+          </p>
+          <p>Don't have an account? <a href="register.html">Register here</a></p>
+        </form>
+        <div id="forget-password-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Forget Password</h2>
+            <form action="hjjj.phpd" method="post">
+              <label for="forget-password-email">Email:</label>
+              <input type="email" id="forget-password-email" name="email" required>
+              <button type="submit">Send Reset Link</button>
+            </form>
+          </div>
+        </div>
+      </div></h1>    
+      <script src="script.js"></script>
+</body>
+</html>
